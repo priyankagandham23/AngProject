@@ -1,0 +1,91 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="about"  routerLinkActive="active">AboutUs</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" routerLink="contact"  routerLinkActive="active">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="s1"  routerLinkActive="active">Services</a>
+          </li>
+        
+           
+      </ul>
+     
+    </div>
+    <button class="btn btn-primary m-1" data-target="#signin" data-toggle="modal">SignIn</button>
+    <button class="btn btn-primary" data-target="#signup" data-toggle="modal">SignUp</button>
+            
+  </nav>
+
+
+
+<div class="modal" id="signin">
+    <div class="modal-dialog">
+        <div class="modal-content">
+<div class="modal-header">
+<h4>SignIn Page</h4>
+</div>
+<div class="modal-body">
+<form action="">
+  <div class="mb-3">
+<input class="form-control" type="text" name="" id="" placeholder="Enter Username">
+</div>
+<div class="mb-3">
+<input class="form-control" type="text" name="" id="" placeholder="Enter Lastname">
+</div>
+<div class="mb-3">
+<input type="submit" value="Login" class="btn btn-primary">
+</div>
+</form>
+
+
+</div>
+
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="signup">
+  <div class="modal-dialog">
+      <div class="modal-content">
+<div class="modal-header">
+<h4>SignUp Page</h4>
+</div>
+<div class="modal-body">
+  <form action="">
+    <div class="mb-3">
+  <input class="form-control" type="text" name="" id="" placeholder="Enter Username">
+  </div>
+  <div class="mb-3">
+  <input class="form-control" type="text" name="" id="" placeholder="Enter Lastname">
+  </div>
+  <div class="mb-3">
+    <input class="form-control" type="date" name="" id="" placeholder="Enter Lastname">
+    </div>
+  <div class="mb-3">
+  <input type="submit" value="Login" class="btn btn-primary">
+  </div>
+  </form>
+  
+</div>
+
+      </div>
+  </div>
+</div>
+
+
+
+<router-outlet></router-outlet>
